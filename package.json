@@ -1,0 +1,19 @@
+{
+  "name": "jiyi",
+  "version": "0.0.1",
+  "description": "app for learning Hanzi",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcaltmann/jiyi.git"
+  },
+  "author": "Marc Altmann <marcaltmann@posteo.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcaltmann/jiyi/issues"
+  },
+  "homepage": "https://github.com/marcaltmann/jiyi#readme"
+}
