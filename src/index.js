@@ -1,14 +1,13 @@
 /* eslint-disable no-console */
 import React from 'react';
 import ReactDOM from 'react-dom';
-//import configureStore from './store/configureStore';
-//import Root from './components/Root';
+import configureStore from './store/configure-store';
+import Root from './components/root';
 
-//const store = configureStore();
+const store = configureStore();
 
 ReactDOM.render(
-//  <Root store={store} />,
-  <h1 style={{ fontWeight: 'normal', fontSize: '4em' }}>記憶</h1>,
+  <Root store={store} />,
   document.getElementById('root')
 );
 

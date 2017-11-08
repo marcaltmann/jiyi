@@ -32,7 +32,7 @@ const config = {
   plugins: [
     new CleanWebpackPlugin(outputPath),
     new HtmlWebpackPlugin({
-      title: 'App Title',
+      title: '記憶',
       template: path.resolve(__dirname, 'src', 'index.ejs'),
     }),
     new webpack.DefinePlugin({
