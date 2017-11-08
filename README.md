@@ -1,2 +1,2 @@
-# jiyi
-learning Hanzi
+# 記憶 (jiyi)
+App for learning Hanzi
