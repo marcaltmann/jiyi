@@ -4,6 +4,8 @@ const config = {
     'process': false,
     'module': false,
     '__dirname': true,
+    'describe': false,
+    'it': false,
   },
   env: {
     browser: true,
@@ -54,6 +56,7 @@ const config = {
   },
   plugins: [
     'react',
+    'mocha',
   ],
 };
 
