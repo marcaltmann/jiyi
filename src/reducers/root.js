@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux';
-import position, * as fromPosition from './position';
+import order, * as fromOrder from './order';
 
 const rootReducer = combineReducers({
-  position,
+  order,
 });
 
 export default rootReducer;
 
-export const getPosition = (state) =>
-  fromPosition.getPosition(state.position);
+export const getCharacterAt = (state, index) =>
+  fromOrder.getCharacterAt(state.order, index);

@@ -1,60 +1,27 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import hanziList from '../../data/hanzi-list';
+import { withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
+import { getCharacterAt } from 'reducers/root';
+import HanziComponent from './hanzi-component';
+import { showCharacter } from 'actions/order';
 
-class Hanzi extends Component {
-  constructor(props) {
-    super(props);
+const mapStateToProps = (state, ownProps) => {
+  const id = parseInt(ownProps.match.params.id);
 
-    this.state = {
-      hidden: true,
-    };
-
-    this.show = this.show.bind(this);
-  }
-
-  show() {
-    this.setState({
-      hidden: false,
-    });
-  }
-
-  render() {
-    const { match } = this.props;
-    const { hidden } = this.state;
-    const id = parseInt(match.params.id, 10);
-    const index = id - 1;
-    const keyword = hanziList[index].k;
-    const traditionalCharacter = hanziList[index].t;
-
-    return (
-      <div className="Hanzi">
-        <p>{keyword}</p>
-        <p style={{ fontSize: '4em' }}>
-          {
-            hidden ?
-              '?' :
-              traditionalCharacter
-          }
-        </p>
-        <button type="button" onClick={this.show}>
-          Anzeigen
-        </button>
-        <p>
-          <Link to={`/${id - 1}`}>zurück</Link>
-          {' '}
-          |
-          {' '}
-          <Link to={`/${id + 1}`}>vor</Link>
-        </p>
-      </div>
-    );
-  }
-}
-
-Hanzi.propTypes = {
-  match: PropTypes.object.isRequired,
+  return {
+    id,
+    character: getCharacterAt(state, id - 1),
+  };
 };
+
+const mapDispatchToProps = (dispatch, ownProps) => ({
+  onClick() {
+    dispatch(showCharacter(parseInt(ownProps.match.params.id) - 1));
+  },
+});
+
+const Hanzi = withRouter(connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(HanziComponent));
 
 export default Hanzi;

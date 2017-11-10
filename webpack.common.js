@@ -39,6 +39,12 @@ const config = {
       '__VERSION__': JSON.stringify(appVersion),
     }),
   ],
+  resolve: {
+    modules: [
+      path.resolve('./src'),
+      path.resolve('./node_modules'),
+    ],
+  },
 };
 
 module.exports = config;
