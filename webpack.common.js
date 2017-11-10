@@ -19,14 +19,6 @@ const config = {
         use: 'babel-loader',
         include: path.resolve(__dirname, 'src'),
       },
-      {
-        test: /\.(png|jpe?g|svg)$/,
-        use: 'file-loader',
-      },
-      {
-        test: /\.(woff|woff2)$/,
-        use: 'file-loader',
-      },
     ],
   },
   plugins: [

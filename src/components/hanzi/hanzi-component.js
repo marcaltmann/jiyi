@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
+import './hanzi-component.css';
+
 const HanziComponent = ({ id, character, onClick }) => (
   <div className="Hanzi">
     <p>{character.k}</p>
-    <p style={{ fontSize: '4em' }}>
+    <p className="Hanzi-traditionalCharacter">
       {
         character.shown ?
           character.t :

@@ -22,7 +22,10 @@ const devConfig = {
           'css-loader',
           //'postcss-loader',
         ],
-        include: path.resolve(__dirname, 'src', 'styles'),
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules'),
+        ],
       },
     ],
   },

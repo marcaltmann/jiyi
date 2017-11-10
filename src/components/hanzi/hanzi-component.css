@@ -1,0 +1,8 @@
+.Hanzi {
+  text-align: center;
+  color: var(--text-color);
+}
+
+.Hanzi-traditionalCharacter {
+  font-size: 4em;
+}

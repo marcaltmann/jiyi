@@ -19,7 +19,6 @@ const prodConfig = {
           use: [
             'css-loader',
             'postcss-loader',
-            'sass-loader',
           ],
         }),
         include: path.resolve(__dirname, 'src', 'styles'),

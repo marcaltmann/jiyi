@@ -6,6 +6,7 @@ const config = {
     '__dirname': true,
     'describe': false,
     'it': false,
+    'require': false,
   },
   env: {
     browser: true,

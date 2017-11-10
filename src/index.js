@@ -2,8 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import configureStore from './store/configure-store';
+
+import 'styles/index';
+
 import Root from './components/root';
 import { shuffleOrder } from 'actions/order';
+
 
 const store = configureStore();
 store.dispatch(shuffleOrder());
