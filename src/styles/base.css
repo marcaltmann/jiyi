@@ -1,5 +1,7 @@
 html {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
+  font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
 
   --text-color: #4d4d4d;
+  --text-color-hover: #2d2d2d;
 }

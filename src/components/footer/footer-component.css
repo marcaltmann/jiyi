@@ -1,0 +1,28 @@
+.footer {
+  font-size: 1em;
+  display: flex;
+  text-align: center;
+
+  --border-gap: 0.05em solid white;
+}
+
+.footer__link {
+  flex: 1 1;
+  line-height: 4;
+  text-decoration: none;
+  color: white;
+  background: var(--text-color);
+  transition: background 0.125s;
+}
+
+.footer__link--prev {
+  border-right: var(--border-gap);
+}
+
+.footer__link--next {
+  border-left: var(--border-gap);
+}
+
+.footer__link:hover {
+  background: var(--text-color-hover);
+}

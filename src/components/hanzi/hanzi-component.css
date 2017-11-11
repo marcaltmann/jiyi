@@ -1,8 +1,23 @@
 .Hanzi {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: space-between;
+  align-items: stretch;
   text-align: center;
+
   color: var(--text-color);
 }
 
+.Hanzi-keyword {
+  flex: 1 1;
+  font-size: 2em;
+  margin-top: 3em;
+  margin-bottom: 0;
+}
+
 .Hanzi-traditionalCharacter {
-  font-size: 4em;
+  flex: 3 1;
+  margin: 0;
+  font-size: 8em;
 }
