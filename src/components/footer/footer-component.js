@@ -5,10 +5,18 @@ import './footer-component.css';
 
 const FooterComponent = ({ currentPage }) => (
   <footer className="footer">
-    <Link className="footer__link footer__link--prev" to={`/${currentPage - 1}`}>
+    <Link
+      className="footer__link footer__link--prev"
+      to={`/${currentPage - 1}`}
+      title="Zurück"
+    >
       ◀
     </Link>
-    <Link className="footer__link footer__link--next" to={`/${currentPage + 1}`}>
+    <Link
+      className="footer__link footer__link--next"
+      to={`/${currentPage + 1}`}
+      title="Vor"
+    >
       ►
     </Link>
   </footer>
