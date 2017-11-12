@@ -6,7 +6,7 @@ const MinifyPlugin = require('babel-minify-webpack-plugin');
 const common = require('./webpack.common.js');
 
 const prodConfig = {
-  devtool: 'source-map',
+  devtool: 'none',
   output: {
     publicPath: '/',
   },
@@ -21,7 +21,10 @@ const prodConfig = {
             'postcss-loader',
           ],
         }),
-        include: path.resolve(__dirname, 'src', 'styles'),
+        include: [
+          path.resolve(__dirname, 'src'),
+          path.resolve(__dirname, 'node_modules'),
+        ],
       },
     ],
   },
