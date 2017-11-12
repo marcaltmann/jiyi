@@ -9,3 +9,6 @@ export default rootReducer;
 
 export const getCharacterAt = (state, index) =>
   fromOrder.getCharacterAt(state.order, index);
+
+export const getNumCharacters = (state) =>
+  fromOrder.getNumCharacters(state.order);

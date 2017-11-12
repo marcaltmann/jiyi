@@ -13,6 +13,7 @@
   color: white;
   background: var(--text-color);
   transition: background 0.125s;
+  user-select: none;
 }
 
 .footer__link--prev {
@@ -25,4 +26,12 @@
 
 .footer__link:hover {
   background: var(--text-color-hover);
+}
+
+.footer__link--disabled {
+  background: var(--disabled-button-color);
+}
+
+.footer__link--disabled:hover {
+  background: var(--disabled-button-color);
 }

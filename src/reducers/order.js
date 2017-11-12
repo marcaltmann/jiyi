@@ -27,3 +27,6 @@ export default reducer;
 
 export const getCharacterAt = (state, index) =>
   state[index];
+
+export const getNumCharacters = (state) =>
+  state.length;
