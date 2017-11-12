@@ -3,6 +3,8 @@ const webpack = require('webpack');
 const merge = require('webpack-merge');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const MinifyPlugin = require('babel-minify-webpack-plugin');
+const FaviconsWebpackPlugin = require('favicons-webpack-plugin');
+
 const common = require('./webpack.common.js');
 
 const prodConfig = {
@@ -41,6 +43,7 @@ const prodConfig = {
       /api\/index\.js/,
       'realApi.js'
     ),
+    new FaviconsWebpackPlugin(path.resolve(__dirname, 'src', 'images', 'favicon.png')),
   ],
 };
 

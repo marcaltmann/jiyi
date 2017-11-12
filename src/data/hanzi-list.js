@@ -217,6 +217,14 @@ const hanziList = [
     simplified: '凸',
     pinyin: 'tū',
   },
+
+  {
+    frame: 482,
+    keyword: 'Ei',
+    traditional: '蛋',
+    simplified: '蛋',
+    pinyin: 'dàn',
+  },
 ];
 
 export default hanziList;
