@@ -4,7 +4,7 @@ import Footer from 'components/footer/footer-container';
 
 import './hanzi-component.css';
 
-const HanziComponent = ({ id, character, onClick }) => (
+const HanziComponent = ({ character, onClick }) => (
   <div className="Hanzi">
     <p className="Hanzi-keyword">{character.keyword}</p>
 
@@ -14,7 +14,7 @@ const HanziComponent = ({ id, character, onClick }) => (
           {character.traditional}
         </p> :
         <p className="Hanzi-hidden" onClick={onClick}>
-          ?
+          字
         </p>
     }
 
@@ -23,7 +23,6 @@ const HanziComponent = ({ id, character, onClick }) => (
 );
 
 HanziComponent.propTypes = {
-  id: PropTypes.number.isRequired,
   character: PropTypes.object.isRequired,
   onClick: PropTypes.func.isRequired,
 };

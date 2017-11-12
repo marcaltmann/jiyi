@@ -12,12 +12,18 @@
 .Hanzi-keyword {
   flex: 1 1;
   font-size: 2em;
-  margin-top: 3em;
+  margin-top: 10vh;
   margin-bottom: 0;
 }
 
-.Hanzi-traditionalCharacter {
+.Hanzi-traditionalCharacter,
+.Hanzi-hidden {
   flex: 3 1;
   margin: 0;
-  font-size: 8em;
+  font-size: 25vh;
+}
+
+.Hanzi-hidden {
+  color: var(--text-color-light);
+  cursor: help;
 }
