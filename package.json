@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
+    "deploy": "surge --project=\"dist/\" --domain=\"jittery-sister.surge.sh\"",
     "lint": "eslint src/",
     "start": "webpack-dev-server --config webpack.dev.js",
     "test": "mocha --require babel-register 'src/**/*.test.js'"
