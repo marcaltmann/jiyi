@@ -219,6 +219,125 @@ const hanziList = [
   },
 
   {
+    frame: 385,
+    keyword: 'Vorhang',
+    traditional: '幕',
+    simplified: '幕',
+    pinyin: 'mù',
+  },
+  {
+    frame: 284,
+    keyword: 'Stirn',
+    traditional: '額',
+    simplified: '额',
+    pinyin: 'é',
+  },
+  {
+    frame: 430,
+    keyword: 'Fett',
+    traditional: '脂',
+    simplified: '脂',
+    pinyin: 'zhī',
+  },
+  {
+    frame: 360,
+    keyword: 'militärisch',
+    traditional: '武',
+    simplified: '武',
+    pinyin: 'wǔ',
+  },
+  {
+    frame: 426,
+    keyword: 'dies (literarisch)',
+    traditional: '此',
+    simplified: '此',
+    pinyin: 'cǐ',
+  },
+
+  {
+    frame: 456,
+    keyword: 'Umgrenzung',
+    traditional: '境',
+    simplified: '境',
+    pinyin: 'jìng',
+  },
+  {
+    frame: 291,
+    keyword: 'ein Strahlen',
+    traditional: '輝',
+    simplified: '辉',
+    pinyin: 'huī',
+  },
+  {
+    frame: 291,
+    keyword: 'ein Strahlen',
+    character: {
+      traditional: '輝',
+      simplified: '辉',
+    },
+    pinyin: 'huī',
+  },
+  {
+    frame: 293,
+    keyword: 'Krone',
+    traditional: '冠',
+    simplified: '冠',
+    pinyin: 'guān',
+  },
+  {
+    frame: 293,
+    keyword: 'Krone',
+    character: '冠',
+    pinyin: 'guān',
+  },
+  {
+    frame: 234,
+    keyword: 'Druck',
+    traditional: '壓',
+    simplified: '压',
+    pinyin: 'yā',
+  },
+  {
+    frame: 359,
+    keyword: 'Lebensjahre',
+    traditional: '歲',
+    simplified: '岁',
+    pinyin: 'suì',
+    description: 'ZEW',
+  },
+  {
+    frame: 356,
+    keyword: 'häufig',
+    traditional: '頻',
+    simplified: '频',
+    pinyin: 'pín',
+  },
+  {
+    frame: 357,
+    keyword: 'zustimmen',
+    traditional: '肯',
+    simplified: '肯',
+    pinyin: 'kěn',
+  },
+  {
+    frame: 204,
+    keyword: 'Schaum',
+    traditional: '沫',
+    simplified: '沫',
+    pinyin: 'mò',
+  },
+
+  /*
+  {
+    frame: ,
+    keyword: '',
+    traditional: '',
+    simplified: '',
+    pinyin: '',
+  },
+  */
+
+  {
     frame: 482,
     keyword: 'Ei',
     traditional: '蛋',
