@@ -1,7 +1,9 @@
 import createReducer from './create-reducer';
 import { actions } from 'constants/index';
+import shuffle from 'shuffle-array';
+import hanziList from 'data/hanzi-list';
 
-const initialState = [];
+const initialState = shuffle(hanziList, { copy: true });
 
 const replace = (state, { payload }) =>
   payload;

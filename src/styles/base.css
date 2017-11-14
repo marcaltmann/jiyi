@@ -7,3 +7,7 @@ html {
   --text-color-hover: #2d2d2d;
   --disabled-button-color: #eee;
 }
+
+p {
+  margin: 0;
+}

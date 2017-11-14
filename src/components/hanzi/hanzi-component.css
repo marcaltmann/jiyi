@@ -16,6 +16,15 @@
   margin-bottom: 0;
 }
 
+.Hanzi-keyword.is-clickable {
+  cursor: pointer;
+}
+
+.Hanzi-keyword > small {
+  margin-left: 1em;
+  font-size: 0.5em;
+}
+
 .Hanzi-traditionalCharacter,
 .Hanzi-hidden {
   flex: 3 1;
@@ -24,6 +33,6 @@
 }
 
 .Hanzi-hidden {
-  color: var(--text-color-light);
+  background-color: var(--text-color-light);
   cursor: help;
 }

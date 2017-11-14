@@ -1,0 +1,12 @@
+.Header {
+  display: flex;
+  align-items: baseline;
+  padding: 1em;
+}
+
+.Header-info {
+}
+
+.Header-reshuffle {
+  margin-left: auto;
+}
