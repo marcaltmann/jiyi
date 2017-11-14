@@ -1,15 +1,18 @@
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { getCharacterAt } from 'reducers/root';
+import { getCharacterAt, getNumCharacters } from 'reducers/root';
 import HanziComponent from './hanzi-component';
 import { showCharacter } from 'actions/order';
 
 const mapStateToProps = (state, ownProps) => {
-  const id = parseInt(ownProps.match.params.id);
+  const id = parseInt(ownProps.match.params.id, 10);
 
   return {
-    id,
     character: getCharacterAt(state, id - 1),
+    prevIsDisabled: id <= 1,
+    nextIsDisabled: id >= getNumCharacters(state),
+    currentPage: id,
+    history: ownProps.history,
   };
 };
 

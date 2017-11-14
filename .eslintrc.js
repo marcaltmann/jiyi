@@ -1,4 +1,5 @@
 const config = {
+  "parser": "babel-eslint",
   globals: {
     '__VERSION__': false,
     'process': false,
@@ -25,6 +26,7 @@ const config = {
     ecmaVersion: 2017,
   },
   rules: {
+    "strict": 0,
     indent: [
       'error',
       2,

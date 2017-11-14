@@ -5,7 +5,7 @@ import { getNumCharacters } from 'reducers/root';
 import { shuffleOrder } from 'actions/order';
 
 const mapStateToProps = (state, ownProps) => ({
-  currentId: ownProps.match.params.id,
+  currentId: parseInt(ownProps.match.params.id, 10),
   total: getNumCharacters(state),
 });
 
