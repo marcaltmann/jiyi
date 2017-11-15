@@ -49,7 +49,7 @@ class HanziComponent extends Component {
           {
             character.shown ?
               <p className="Hanzi-traditionalCharacter">
-                {character.traditional}
+                {character.character.traditional || character.character}
               </p> :
               null
           }
