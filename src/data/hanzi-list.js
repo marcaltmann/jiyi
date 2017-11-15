@@ -202,8 +202,12 @@ const hanziList = [
     },
     pinyin: 'kuān',
   },
-
-
+  {
+    frame: 223,
+    keyword: 'Vorzeichen',
+    character: '兆',
+    pinyin: 'zhào',
+  },
   {
     frame: 234,
     keyword: 'Druck',
@@ -238,6 +242,12 @@ const hanziList = [
     pinyin: 'guān',
   },
   {
+    frame: 300,
+    keyword: 'glänzend',
+    character: '亮',
+    pinyin: 'liàng',
+  },
+  {
     frame: 356,
     keyword: 'häufig',
     character: {
@@ -269,10 +279,61 @@ const hanziList = [
     pinyin: 'wǔ',
   },
   {
+    frame: 363,
+    keyword: 'Politik',
+    character: '政',
+    pinyin: 'zhèng',
+  },
+  {
+    frame: 370,
+    keyword: 'errichten',
+    character: '建',
+    pinyin: 'jiàn',
+  },
+  {
+    frame: 371,
+    keyword: 'verlängern',
+    character: '延',
+    pinyin: 'yán',
+  },
+  {
+    frame: 372,
+    keyword: 'Geburt',
+    character: {
+      traditional: '誕',
+      simplified: '诞',
+    },
+    pinyin: 'dàn',
+  },
+  {
+    frame: 374,
+    keyword: 'Fundament',
+    character: {
+      traditional: '礎',
+      simplified: '础',
+    },
+    pinyin: 'chǔ',
+  },
+  {
     frame: 385,
     keyword: 'Vorhang',
     character: '幕',
     pinyin: 'mù',
+  },
+  {
+    frame: 391,
+    keyword: 'stagnierend',
+    character: {
+      traditional: '滯',
+      simplified: '滞',
+    },
+    pinyin: 'zhì',
+  },
+  {
+    frame: 392,
+    keyword: 'Dorn',
+    character: '刺',
+    pinyin: 'cì',
   },
   {
     frame: 395,
@@ -281,10 +342,40 @@ const hanziList = [
     pinyin: 'yún',
   },
   {
+    frame: 405,
+    keyword: 'vortäuschen',
+    character: {
+      traditional: '喬',
+      simplified: '乔',
+    },
+    pinyin: 'qiáo',
+  },
+  {
+    frame: 406,
+    keyword: 'Brücke',
+    character: {
+      traditional: '橋',
+      simplified: '桥',
+    },
+    pinyin: 'qiáo',
+  },
+  {
     frame: 413,
     keyword: 'Imperator',
     character: '帝',
     pinyin: '帝',
+  },
+  {
+    frame: 423,
+    keyword: 'Abkömmlinge',
+    character: '昆',
+    pinyin: 'kūn',
+  },
+  {
+    frame: 424,
+    keyword: 'mischen',
+    character: '混',
+    pinyin: 'hùn',
   },
   {
     frame: 425,
@@ -299,16 +390,55 @@ const hanziList = [
     pinyin: 'cǐ',
   },
   {
+    frame: 427,
+    keyword: 'einiges',
+    character: '些',
+    pinyin: 'xiē',
+  },
+  {
+    frame: 429,
+    keyword: 'Zweck',
+    character: '旨',
+    pinyin: 'zhǐ',
+  },
+  {
     frame: 430,
     keyword: 'Fett',
     character: '脂',
     pinyin: 'zhī',
   },
   {
+    frame: 438,
+    keyword: 'Unterleib',
+    character: '腹',
+    pinyin: 'fù',
+  },
+  {
+    frame: 442,
+    keyword: 'weich',
+    character: {
+      traditional: '軟',
+      simplified: '软',
+    },
+    pinyin: 'ruǎn',
+  },
+  {
     frame: 456,
     keyword: 'Umgrenzung',
     character: '境',
     pinyin: 'jìng',
+  },
+  {
+    frame: 458,
+    keyword: 'blind',
+    character: '盲',
+    pinyin: 'máng',
+  },
+  {
+    frame: 466,
+    keyword: 'Seite',
+    character: '旁',
+    pinyin: 'páng',
   },
   {
     frame: 472,
