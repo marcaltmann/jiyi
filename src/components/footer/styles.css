@@ -1,3 +1,11 @@
+/** @define Footer; */
+
+:root {
+  --Footer-borderGap: 0.05em solid white;
+  --Footer-black: #050102;
+  --Footer-red: #de2825;
+}
+
 .Footer {
   display: flex;
   font-size: 1em;

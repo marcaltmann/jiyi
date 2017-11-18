@@ -1,19 +1,19 @@
 .Hanzi {
   align-items: stretch;
+  background-color: beige;
   color: var(--chineseBlack);
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
   text-align: center;
-  background-color: beige;
 }
 
 .Hanzi-keyword {
+  color: var(--chineseRed);
   flex: 1 1;
   font-size: 2em;
   margin-bottom: 0;
-  color: var(--chineseRed);
 }
 
 .Hanzi-keyword.is-clickable {

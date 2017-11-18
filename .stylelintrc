@@ -1,10 +1,12 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-suitcss",
   "plugins": [
     "stylelint-selector-bem-pattern"
   ],
+  "preset": "suit",
   "rules": {
     "plugin/selector-bem-pattern": {
+      "preset": "suit",
       "componentName": "[A-Z]+",
       "componentSelectors": {
         "initial": "^\\.{componentName}(?:-[a-z]+)?$",
