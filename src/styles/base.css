@@ -1,4 +1,8 @@
-html {
+@import "../components/header/styles.css";
+@import "../components/footer/styles.css";
+@import "../components/hanzi/styles.css";
+
+:root {
   font-family: Tahoma, Verdana, Segoe, sans-serif;
   font-size: calc(16px + (24 - 16) * (100vw - 400px) / (800 - 400));
 

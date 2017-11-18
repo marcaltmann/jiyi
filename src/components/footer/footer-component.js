@@ -1,7 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import './footer-component.css';
 
 const FooterComponent = ({ currentPage, prevIsDisabled, nextIsDisabled }) => (
   <footer className="footer">
