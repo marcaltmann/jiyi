@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const HeaderComponent = ({ currentId, total, onReshuffleClick }) => (
   <header className="Header">
-    <p className="Header-info">
+    <p>
       {currentId} / {total}
     </p>
 
