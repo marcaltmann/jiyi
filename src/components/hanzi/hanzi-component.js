@@ -32,6 +32,13 @@ class HanziComponent extends Component {
           onSwipedLeft={() => this.onSwiped(LEFT)}
           onSwipedRight={() => this.onSwiped(RIGHT)}
         >
+          {
+            character.shown ?
+              <p className="Hanzi-traditionalCharacter">
+                {character.character.traditional || character.character}
+              </p> :
+              null
+          }
           <p
             className={classNames('Hanzi-keyword', { 'is-clickable': !character.shown })}
             onClick={ character.shown ? undefined : onClick }
@@ -43,14 +50,6 @@ class HanziComponent extends Component {
                 null
             }
           </p>
-
-          {
-            character.shown ?
-              <p className="Hanzi-traditionalCharacter">
-                {character.character.traditional || character.character}
-              </p> :
-              null
-          }
         </Swipeable>
       </div>
     );
