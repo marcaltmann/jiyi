@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 const FooterComponent = ({ currentPage, prevIsDisabled, nextIsDisabled }) => (
-  <footer className="footer">
+  <footer className="Footer">
     {
       prevIsDisabled ?
         <span
-          className="footer__link footer__link--disabled footer__link--prev"
+          className="Footer-link Footer-link--prev is-disabled"
         >◀</span> :
         <Link
-          className="footer__link footer__link--prev"
+          className="Footer-link Footer-link--prev"
           to={`/${currentPage - 1}`}
           title="Zurück"
         >◀</Link>
@@ -18,10 +18,10 @@ const FooterComponent = ({ currentPage, prevIsDisabled, nextIsDisabled }) => (
     {
       nextIsDisabled ?
         <span
-          className="footer__link footer__link--disabled footer__link--next"
+          className="Footer-link Footer-link--next is-disabled"
         >►</span> :
         <Link
-          className="footer__link footer__link--next"
+          className="Footer-link Footer-link--next"
           to={`/${currentPage + 1}`}
           title="Vor"
         >►</Link>

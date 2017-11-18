@@ -7,7 +7,7 @@ const HeaderComponent = ({ currentId, total, onReshuffleClick }) => (
       {currentId} / {total}
     </p>
 
-    <button type="button" className="Header-reshuffle" onClick={onReshuffleClick}>
+    <button type="button" className="Button Button--default Header-reshuffle" onClick={onReshuffleClick}>
       Reshuffle
     </button>
   </header>

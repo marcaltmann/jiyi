@@ -1,0 +1,10 @@
+/**
+ * Component variables
+ */
+
+:root {
+  /* Footer */
+  --Footer-borderGap: 0.05em solid white;
+  --Footer-black: #050102;
+  --Footer-red: #de2825;
+}

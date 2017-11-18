@@ -1,18 +1,19 @@
 .Hanzi {
+  align-items: stretch;
+  color: var(--chineseBlack);
   display: flex;
   flex-direction: column;
   height: 100vh;
   justify-content: space-between;
-  align-items: stretch;
   text-align: center;
-  color: var(--text-color);
+  background-color: beige;
 }
 
 .Hanzi-keyword {
   flex: 1 1;
   font-size: 2em;
-  margin-top: 10vh;
   margin-bottom: 0;
+  color: var(--chineseRed);
 }
 
 .Hanzi-keyword.is-clickable {
@@ -20,18 +21,18 @@
 }
 
 .Hanzi-keyword > small {
-  margin-left: 1em;
   font-size: 0.5em;
+  margin-left: 1em;
 }
 
 .Hanzi-traditionalCharacter,
 .Hanzi-hidden {
   flex: 3 1;
-  margin: 0;
-  font-size: 25vh;
+  font-size: 35vh;
+  margin: 5vh 0 10vh;
 }
 
 .Hanzi-hidden {
-  background-color: var(--text-color-light);
+  background-color: beige;
   cursor: help;
 }

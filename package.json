@@ -67,6 +67,8 @@
     "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "shuffle-array": "^1.0.1"
+    "shuffle-array": "^1.0.1",
+    "suitcss": "^3.0.0",
+    "suitcss-components-button": "^6.0.1"
   }
 }
