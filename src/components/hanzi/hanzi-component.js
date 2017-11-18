@@ -3,7 +3,6 @@ import Swipeable from 'react-swipeable';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Header from 'components/header/header-container';
-import Footer from 'components/footer/footer-container';
 
 const RIGHT = '-1';
 const LEFT = '+1';
@@ -53,8 +52,6 @@ class HanziComponent extends Component {
               null
           }
         </Swipeable>
-
-        <Footer />
       </div>
     );
   }
